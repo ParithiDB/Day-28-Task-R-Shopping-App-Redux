@@ -9,7 +9,7 @@ export default function Home() {
   const [items, setItems] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3000/Mocks/product.json")
+    fetch('https://remarkable-platypus-5f6f00.netlify.app/Mocks/product.json')
       .then((response) => response.json())
       .then((result) => {
         if (result && result.products) {
